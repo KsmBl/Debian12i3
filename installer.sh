@@ -1,6 +1,7 @@
 #! /bin/bash
 sudo apt install fish htop neofetch vlc i3 polybar picom numlockx playerctl rofi thunderbird vim wget
-sudo wget "https://config.whisper-me.de/polybar/config.ini" -P /etc/polybar/ -c
+sudo rm /etc/polybar/config.ini
+sudo wget "https://config.whisper-me.de/polybar/config.ini" -P /etc/polybar/
 sudo chown "$USER:$USER" /etc/polybar
 
 sudo wget "https://config.whisper-me.de/picom/picom.conf" -P ~/.config/picom/
