@@ -1,4 +1,8 @@
 #! /bin/bash
+
+sudo apt update
+sudo apt full-upgrade -y
+
 sudo apt install fish htop neofetch vlc i3 polybar picom numlockx playerctl rofi thunderbird vim wget
 sudo rm /etc/polybar/config.ini
 sudo wget "https://config.whisper-me.de/polybar/config.ini" -P /etc/polybar/
