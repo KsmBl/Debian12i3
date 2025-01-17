@@ -16,3 +16,8 @@ sudo wget "https://config.whisper-me.de/vim/.vimrc" -P ~/
 sudo chown "$USER:$USER" ~/.vimrc
 
 chsh -s /usr/bin/fish
+
+echo "rebooting..."
+sleep 1
+
+sudo reboot now
